@@ -206,3 +206,24 @@ executives section end*/
   to {opacity: 1}
 }
 /** past events end */
+
+/** find us section*/
+.find-us-heading{
+    margin-left: 45%;
+}
+.find-us-img{
+    height: 500px;
+    width: 65%;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/** find us section end */
+
+/** contact us section*/
+.form-heading{
+    margin-left: 45%;
+}
+
+/** contact us section end */
