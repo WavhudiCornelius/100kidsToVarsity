@@ -94,16 +94,67 @@ body {
 }
 /**About section end*/
 
-/** executives section 
-.headshot{
-    height: 463px;
-    width: 409px;
-    left: 103px;
-    top: 167px;
-    border-radius: 0px;
-    border: 3px solid black;
+/** executives section */
+
+.executive-heading{
+    margin-left: 40%;
 }
-executives section end*/
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 12px;
+  }
+
+  .content img{
+      border-radius: 40%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+/**executives section end*/
 
 /** past events section */
 
@@ -257,6 +308,6 @@ input, select, textarea {
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 50px;
+    padding: 20px 200px 0 200px;
   }
 /** contact us section end */
