@@ -13,7 +13,7 @@ body {
   font-size: 25px;
 }
 
-.Executive{
+.column{
   font-size: 15px;
 }
 .dark-mode {
@@ -41,10 +41,84 @@ body {
     margin: 0;
 }
 
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  display: flex;
+  width: 250%;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
 .socialLinks {
     margin: 0;
     width: 65px;
     grid-row-start: 6;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #f50438;
+  color: white;
+}
+.socialLinks .fa-envelope {
+  background: white;
+  color: black;
+}
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
 .social-box {
